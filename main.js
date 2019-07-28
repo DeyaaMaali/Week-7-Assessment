@@ -66,9 +66,18 @@ Output =>
   { name: "mercer",age:26}
 ]
 */
+var arrOfObj1 = [
+  { name: "alex" ,age:22},
+  { name: "mercer",age:26},
+  { name: "alice" ,age:33},
+  { name: "zaheer",age:35},
+  { name: "elizabeth",age:45}
+]
 
-function longerAndYounger() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function longerAndYounger(arr, n1, n2) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  var arr2 = arr.filter(elem => elem.name.length > n1 && elem.age < n2);
+  return arr2;         
 }
 
 /* Q3:
