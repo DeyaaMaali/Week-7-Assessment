@@ -107,8 +107,17 @@ Output =>
 "alice, fried chiken, pizaa, burger, hot dog, eggs"
   
 */
-function nameAndAllFoods() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var arrOfObj2 = [
+  { name: "alex", food: "fried chiken" },
+  { name: "mercer", food: "pizaa" },
+  { name: "alice", food: "burger" },
+  { name: "zaheer", food: "hot dog" },
+  { name: "elizabeth", food: "eggs" }
+]
+
+function nameAndAllFoods(arr, n) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  return arr.reduce((acc,elem) => acc +", " + elem.food , arr[n].name ) ;        
 }
 
 
