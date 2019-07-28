@@ -23,8 +23,17 @@ Output =>
 
 */
 
-function MultiByNum1OrNum2() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var arrOfNum1 = [1,5,2];
+var arrOfNum2 = [7,2,50];
+function MultiByNum1OrNum2(arr, n1, n2) {
+  // WRITE YOUR CODE UNDER THIS LINE   
+  var arr2 = arr.map(function(elem){
+    if (elem%n1 === 0)
+      return elem * n1;
+    else
+      return elem * n2;
+  })  
+  return arr2;    
 }
 
 /* Q2:
